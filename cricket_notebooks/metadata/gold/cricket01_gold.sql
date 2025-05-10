@@ -19,6 +19,7 @@ CREATE TABLE cricket01_gold (
   load_date TIMESTAMP
 )
 USING DELTA
+PARTITIONED BY (country)
 LOCATION 'dbfs:/FileStore/project/cricket/gold/cricket01_gold/'
 TBLPROPERTIES (
   'delta.constraints.primaryKey' = 'player',
