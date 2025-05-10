@@ -87,7 +87,8 @@ try :
     .format("delta") \
       .mode("overwrite") \
       .option("overwriteSchema", "true") \
+      .partitionBy('country') \
     .saveAsTable("cricket01_gold")
-  print("**************** Data saved in Gold Table ***************")
+  print(f"**************** Data saved in Gold Table at {date.today()} ***************")
 except Exception as e:
   print(e)
