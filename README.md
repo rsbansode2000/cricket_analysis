@@ -94,6 +94,8 @@ Generated using:
 3.  Execute the SQL and Python scripts in business trans/ and gold/ to generate analytics.
 
 4.  Visualize results with matplotlib and seaborn.
+5.  Just Run this notebook :
+    cricket_notebooks/load_job/load_job.ipynb
 
 ✍️ Author
 Rohit Bansode
